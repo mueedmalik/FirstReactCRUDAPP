@@ -1,0 +1,171 @@
+.showBtnContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 8px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.showBtnContainer #showBtn {
+  padding: 8px;
+  background-color: aqua;
+  border: 2px solid #1574cc;
+  font-size: 1rem;
+  color: #1574cc;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: 0.6s;
+}
+
+.showBtnContainer #showBtn:active,
+.showBtnContainer #showBtn:hover {
+  color: aqua;
+  background-color: #1574cc;
+}
+
+#movieListDisplayContainer {
+  display: none;
+  flex-direction: column;
+}
+
+#movieListDisplayContainer #movieListLength {
+  background-color: aqua;
+  color: #1574cc;
+  border-radius: 12px;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+#movieList {
+  color: aliceblue;
+}
+
+#movieList #listItem {
+  display: flex;
+  flex-direction: column;
+  background-color: #06285a;
+}
+
+#listItem h3,
+#listItem p,
+#listItem div {
+  background-color: #06285a;
+  margin: 4px;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+#movieList #listItem #deleteBtnContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+#movieList #listItem #deleteBtnContainer #deleteBtn {
+  background-color: aqua;
+  border-radius: 12px;
+  color: #1574cc;
+  border: 2px solid #1574cc;
+  cursor: pointer;
+  margin: 8px;
+  padding: 8px;
+  transition: 0.6s;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#movieList #listItem #deleteBtnContainer #deleteBtn:active,
+#movieList #listItem #deleteBtnContainer #deleteBtn:hover {
+  color: aqua;
+  background-color: #1574cc;
+}
+
+#movieList #listItem #deleteBtnContainer #closeDelBtn {
+  margin-right: 8px;
+  padding: 4px 8px 5px 8px;
+  background-color: #ff0000;
+  color: white;
+  border-radius: 12px;
+  border: 2px solid #ff0000;
+  cursor: pointer;
+  transition: 0.6s;
+  font-size: 1rem;
+}
+
+#movieList #listItem #deleteBtnContainer #doneDelBtn {
+  margin-left: 8px;
+  padding: 4px 8px 5px 8px;
+  background-color: #3cff00;
+  color: white;
+  border-radius: 12px;
+  border: 2px solid #3cff00;
+  cursor: pointer;
+  transition: 0.6s;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* //////////////////////////////////// */
+
+.updateBtnContainer {
+  display: flex;
+}
+
+.updateBtnContainer button,
+#choiceBtnContainer button,
+.updateNameContainer button,
+.updateReviewContainer button {
+  background-color: aqua;
+  border-radius: 12px;
+  color: #1574cc;
+  border: 2px solid #1574cc;
+  cursor: pointer;
+  margin: 8px;
+  padding: 8px;
+  transition: 0.6s;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#choiceBtnContainer {
+  border: aqua 2px solid;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+#choiceBtnContainer button {
+  font-size: 0.8rem;
+}
+
+.updateNameContainer,
+.updateReviewContainer {
+  border: aqua 2px solid;
+  border-radius: 12px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.updateNameContainer input,
+.updateReviewContainer input {
+  margin: 8px;
+}
+
+.updateNameContainer button,
+.updateReviewContainer button {
+  font-size: 0.69rem;
+}
+
+.updateBtnContainer button:hover,
+.updateBtnContainer button:active,
+#choiceBtnContainer button:hover,
+#choiceBtnContainer button:active,
+.updateNameContainer button:hover,
+.updateReviewContainer button:active {
+  color: aqua;
+  background-color: #1574cc;
+}
+/* /////////////////////////////////////////// */
+
+.setSameWidth {
+  width: 500px;
+}

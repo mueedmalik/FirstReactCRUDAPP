@@ -1,0 +1,13 @@
+.subBlock {
+  padding: 16px;
+  margin: 8px;
+  border-radius: 23px;
+  box-shadow: rgb(0, 153, 255) 0px 0px 8px;
+  border: #274d86 solid 4px;
+  background-color: aqua;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+}

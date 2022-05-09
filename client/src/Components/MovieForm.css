@@ -1,0 +1,62 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputContainer label {
+  margin: 8px;
+  margin-bottom: 0px;
+  padding: 4px;
+  font-size: 1.05rem;
+}
+
+.inputContainer input {
+  text-align: center;
+  margin-bottom: 16px;
+  padding: 8px;
+  height: 40px;
+  background: linear-gradient(0.5turn , #1beabd 10% , #10abff 85%);
+  border-image: linear-gradient(#1beabd 10% , #10abff 85%) 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.inputContainer input::placeholder{
+  color: #b8f7ff;
+}
+
+.inputContainer .movieReviewContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputContainer .movieReviewContainer input {
+  height: 70px;
+}
+
+.inputContainer button {
+  padding: 4px;
+  margin: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.inputContainer #formSubmitBtn {
+  background-color: aqua;
+  border-radius: 12px;
+  color: #1574cc;
+  border: 2px solid #1574cc;
+  cursor: pointer;
+  margin: 8px;
+  padding: 8px;
+  transition: 0.6s;
+  font-size: 1rem;
+}
+
+.inputContainer #formSubmitBtn:active,
+.inputContainer #formSubmitBtn:hover {
+  color: aqua;
+  background-color: #1574cc;
+}
