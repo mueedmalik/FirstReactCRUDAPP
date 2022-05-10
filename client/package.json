@@ -20,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "concurrently -n 'Build,AWS' \"gh-pages -d build\" \"aws s3 sync build/ s3://mooed-repo --acl public-read --profile experts_mooed\"",
+    "deploy": "aws s3 sync build/ s3://mooed-repo --acl public-read --profile experts_mooed",
       
     
     "server": "cd ../server && npm run devStart",
