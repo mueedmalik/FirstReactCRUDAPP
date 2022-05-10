@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./MovieForm.css";
 import "../SharedFiles/centerCSS.css";
-import Axios from "axios";
 
 function MovieForm(props) {
   const [movieName, setMovieName] = useState("");
