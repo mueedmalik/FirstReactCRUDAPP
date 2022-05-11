@@ -20,6 +20,9 @@ function FetchMovieList(props) {
   const cout = (stringArgs) => {
     console.log(stringArgs);
   };
+  const alertFunction = (stringArgs) => {
+    alert(stringArgs);
+  };
   const showBtnClicked = () => {
     const movieListDisplayContainer = document.getElementById(
       "movieListDisplayContainer"
@@ -52,15 +55,15 @@ function FetchMovieList(props) {
   };
 
   const deleteMovie = async (IDofMovietobeDEL) => {
+    setDelShowState(false);
+    setShowState(false);
     const response = await Axios.delete(
       `http://localhost:3001/api/delete/${IDofMovietobeDEL}`
     );
     if (response?.status) {
       props.getMovie();
-      alert("Movie is deleted");
+      setTimeout(() => {alertFunction("Movie is deleted")}, 18);
     }
-    setDelShowState(false);
-    setShowState(false);
   };
 
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -114,7 +117,7 @@ function FetchMovieList(props) {
         props.getMovie();
       }
     } else {
-      alert("Error: Enter New Movie Name.");
+      alertFunction("Error: Enter New Movie Name.");
     }
   };
   const newReviewEntered = (event) => {
@@ -144,7 +147,7 @@ function FetchMovieList(props) {
         props.getMovie();
       }
     } else {
-      alert("Error: Enter New Movie Review.");
+      alertFunction("Error: Enter New Movie Review.");
     }
   };
 
